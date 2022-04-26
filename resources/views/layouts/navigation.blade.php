@@ -21,6 +21,11 @@
                         {{ __('Banner') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')">
+                        {{ __('About Us') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

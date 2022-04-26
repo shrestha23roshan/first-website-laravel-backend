@@ -25,4 +25,5 @@ require __DIR__ . '/auth.php';
 
 Route::namespace('App\Http\Controllers')->middleware(['auth'])->prefix('dashboard/')->group(function () {
     Route::resource('banner', 'BannerController');
+    Route::resource('about', 'AboutController');
 });
