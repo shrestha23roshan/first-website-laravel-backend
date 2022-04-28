@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('banner', 'App\Http\Controllers\Api\BannerController@index');
 Route::get('about', 'App\Http\Controllers\Api\AboutController@index');
+Route::get('service', 'App\Http\Controllers\Api\ServiceController@index');
